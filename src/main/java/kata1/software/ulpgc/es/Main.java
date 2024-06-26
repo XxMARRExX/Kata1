@@ -17,5 +17,20 @@ public class Main {
         System.out.print(player2.toString());
         System.out.print(player3.toString());
 
+        System.out.println("\n");
+
+        Team team1 = new Team("Real madrid", coach);
+
+        team1.addPlayer(player1);
+        team1.addPlayer(player2);
+        team1.addPlayer(player3);
+
+        System.out.print(team1.toString());
+
+        team1.removePlayer(player1);
+
+        System.out.println("\n");
+        System.out.print(team1.toString());
+
     }
 }
